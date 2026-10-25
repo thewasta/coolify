@@ -16,6 +16,7 @@ concurrency:
 jobs:
   sync:
     name: Merge main into next
+    if: github.repository == 'coollabsio/coolify'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
